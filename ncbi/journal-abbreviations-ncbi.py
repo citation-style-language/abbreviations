@@ -16,7 +16,7 @@ def process_file(file, abbreviations):
 
 	if line.startswith('JrId'):
 	    if journalTitle != '' and journalAbbreviation != '':
-	        abbreviations[journalTitle] = journalAbbreviation
+	        abbreviations[journalTitle] = journalAbbreviation.replace(' ', '. ') + '.'
 
 	    if journalTitle == '' or journalAbbreviation == '':
 	        print "Journal without abbreviation:", journalTitle, journalAbbreviation
