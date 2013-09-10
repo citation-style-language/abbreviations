@@ -5,6 +5,23 @@ import os
 files = ['J_Entrez.txt', 'J_Medline.txt', 'J_Sequence.txt']
 output_file = 'abbreviations.txt'
 
+def prepare_abbreviation(full, abbreviated):
+    fullList = full.lower().split(' ')
+    abbreviatedList = abbreviated.split(' ')
+
+    polishedAbbreviation = ''
+
+    for word in abbreviatedList:
+        if polishedAbbreviation != '':
+	    polishedAbbreviation += ' '
+
+        if word.lower() in fullList:
+	    polishedAbbreviation += word
+	else:
+	    polishedAbbreviation += word + '.'
+
+    return polishedAbbreviation
+
 def process_file(file, abbreviations):
     f = open(file, 'r')
 
@@ -16,7 +33,7 @@ def process_file(file, abbreviations):
 
 	if line.startswith('JrId'):
 	    if journalTitle != '' and journalAbbreviation != '':
-	        abbreviations[journalTitle] = journalAbbreviation.replace(' ', '. ') + '.'
+	        abbreviations[journalTitle] = prepare_abbreviation(journalTitle, journalAbbreviation)
 
 	    if journalTitle == '' or journalAbbreviation == '':
 	        print "Journal without abbreviation:", journalTitle, journalAbbreviation
