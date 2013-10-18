@@ -6,6 +6,18 @@ files = ['J_Entrez.txt', 'J_Medline.txt', 'J_Sequence.txt']
 output_file = 'abbreviations.txt'
 
 def prepare_abbreviation(full, abbreviated):
+    """
+    Receives the full journal name and the abbreviated from the list.
+    Adds a full stop after each word IF the word is abbreviated.
+
+    E.g. full    : Acta biomaterialia
+      abbreviated: Acta Biomater
+      
+      returns    : Acta Biomater.
+
+    As a side effect: full stop will not be appended after numbers because
+    they aeppear in the 'full' string.
+    """
     fullList = full.lower().split(' ')
     abbreviatedList = abbreviated.split(' ')
 
