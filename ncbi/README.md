@@ -10,7 +10,8 @@ The files:
  * `J_Sequence.txt'
 
 Have been downloaded from:
-	http://www.ncbi.nlm.nih.gov/books/NBK3827/table/pubmedhelp.pubmedhelptable45/
+	~~http://www.ncbi.nlm.nih.gov/books/NBK3827/table/pubmedhelp.pubmedhelptable45/~~
+      http://www.ncbi.nlm.nih.gov/books/NBK3827/table/pubmedhelp.T.journal_lists/
 
 See the Copyright Notice:
 	http://www.ncbi.nlm.nih.gov/books/about/copyright/
