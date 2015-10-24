@@ -70,12 +70,9 @@ if __name__ == '__main__':
     list_of_journals = sorted(abbreviations.iterkeys())
     
     f = open(output_file, "w")
-    f.write("# List created using the lists from:\n")
-    f.write("# http://www.ncbi.nlm.nih.gov/books/NBK3827/table/pubmedhelp.pubmedhelptable45/\n")
-    f.write("\n")
 
     for journal in list_of_journals:
-        f.write(journal + '\t' + abbreviations[journal] + '\n');
+        f.write(journal + ' = ' + abbreviations[journal] + '\n');
 
     f.close()
 
