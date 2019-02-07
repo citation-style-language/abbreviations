@@ -1,7 +1,7 @@
 {
-  "name": "zotero-abbreviations",
+  "name": "csl-abbreviations",
   "version": "1.0.0",
-  "description": "Zotero abbreviatons lists",
+  "description": "CSL abbreviatons lists",
   "main": "index.js",
   "scripts": {
     "start": "node build.js"
