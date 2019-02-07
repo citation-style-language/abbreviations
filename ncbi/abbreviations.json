@@ -1,7 +1,7 @@
 {
   "info": {
-    "URI": "http://www.ncbi.nlm.nih.gov/books/NBK3827/table/pubmedhelp.pubmedhelptable45/",
-    "name": "List created using the lists from NCBI"
+    "URI": "ftp://ftp.ncbi.nih.gov/pubmed",
+    "name": "NCBI PubMed"
   },
   "default": {
     "content": "NCBI",

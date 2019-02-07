@@ -61,18 +61,18 @@ function process_file(file, abbreviations) {
 }
 
 const abbreviations = {
-  "info": {
-    "URI": "http://www.ncbi.nlm.nih.gov/books/NBK3827/table/pubmedhelp.pubmedhelptable45/",
-    "name": "List created using the lists from NCBI",
+  info: {
+    URI: "ftp://ftp.ncbi.nih.gov/pubmed",
+    name: "NCBI PubMed",
   },
-  "default": {
-    "content": "NCBI",
+  default: {
+    content: "NCBI",
     "container-title": {},
   },
 }
 
 for (const list of ['J_Entrez.txt', 'J_Medline.txt', 'J_Sequence.txt']) {
-  exec(`curl -O ftp://ftp.ncbi.nih.gov/pubmed/${list}`, {cwd: __dirname, stdio: 'inherit'})
+  exec(`curl -O ${abbreviations.info.URI}/${list}`, {cwd: __dirname, stdio: 'inherit'})
   process_file(path.join(__dirname, list), abbreviations['default']['container-title'])
 }
 fs.writeFileSync(path.join(__dirname, 'abbreviations.json'), JSON.stringify(abbreviations, null, 2), 'utf-8')
