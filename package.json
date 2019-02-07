@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/retorquere/abbreviations.git"
+    "url": "https://github.com/citation-style-language/abbreviations.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/retorquere/abbreviations/issues"
+    "url": "https://github.com/citation-style-language/abbreviations/issues"
   },
-  "homepage": "https://github.com/retorquere/abbreviations#readme",
+  "homepage": "https://github.com/citation-style-language/abbreviations#readme",
   "files": [
     "american-journal-of-archaeology/abbreviations.json",
     "ncbi/abbreviations.json",
