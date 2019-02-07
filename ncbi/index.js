@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-
+const exec = require('child_process').execSync
 
 function prepare_abbreviation(full, abbreviated){
   /*
@@ -72,6 +72,7 @@ const abbreviations = {
 }
 
 for (const list of ['J_Entrez.txt', 'J_Medline.txt', 'J_Sequence.txt']) {
+  exec(`curl -O ftp://ftp.ncbi.nih.gov/pubmed/${list}`, {cwd: __dirname, stdio: 'inherit'})
   process_file(path.join(__dirname, list), abbreviations['default']['container-title'])
 }
 fs.writeFileSync(path.join(__dirname, 'abbreviations.json'), JSON.stringify(abbreviations, null, 2), 'utf-8')
