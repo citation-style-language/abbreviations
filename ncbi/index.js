@@ -75,4 +75,7 @@ for (const list of ['J_Entrez.txt', 'J_Medline.txt', 'J_Sequence.txt']) {
   exec(`curl -O ${abbreviations.info.URI}/${list}`, {cwd: __dirname, stdio: 'inherit'})
   process_file(path.join(__dirname, list), abbreviations['default']['container-title'])
 }
-fs.writeFileSync(path.join(__dirname, 'abbreviations.json'), JSON.stringify(abbreviations, null, 2), 'utf-8')
+const target = path.join(__dirname, 'abbreviations.json')
+fs.writeFileSync(target, JSON.stringify(abbreviations, null, 2), 'utf-8')
+
+module.exports = [ target ]

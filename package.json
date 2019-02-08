@@ -20,5 +20,9 @@
     "american-journal-of-archaeology/abbreviations.json",
     "ncbi/abbreviations.json",
     "medline/abbreviations.json"
-  ]
+  ],
+  "devDependencies": {
+    "fs-extra": "^7.0.1",
+    "request-promise": "^4.2.2"
+  }
 }
