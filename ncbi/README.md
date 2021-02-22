@@ -1,15 +1,16 @@
-The files:
- * `J_Medline.txt'
- * `J_Entrez.txt'
- * `J_Sequence.txt'
+[NCBI NLM catalog](https://www.ncbi.nlm.nih.gov/nlmcatalog/journals)
 
-Have been downloaded from:
-	http://www.ncbi.nlm.nih.gov/books/NBK3827/table/pubmedhelp.pubmedhelptable45/
+In `input/`:
 
-See the Copyright Notice:
-	http://www.ncbi.nlm.nih.gov/books/about/copyright/
+- [`ncbi.xml`](https://www.ncbi.nlm.nih.gov/nlmcatalog/?term=ncbijournals)
+- [`medline.xml`](https://www.ncbi.nlm.nih.gov/nlmcatalog?term=currentlyindexed)
+- [`pmc.xml`](https://www.ncbi.nlm.nih.gov/nlmcatalog?term=journalspmc)
 
-Execute:
-	./journal-abbreviations-ncbi.py
+![Use the `Send to` dialog at the bottom of the web page to save the entire catalog as an XML file.](screenshot/send_to.png)
 
-And will read the files and join all together to the abbreviations.txt file.
+In `json/`:
+
+- [`ncbi-abbreviation.json`](): The abbreviations of over 38000 journals _referenced_ in all databases of the [National Center for Biotechnology Information](https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information).
+- [`medline-abbreviation.json`]():
+- [`pmc-abbreviation.json`]():
+- [`nml-abbreviation.json`]():
