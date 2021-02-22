@@ -1,8 +1,17 @@
 # NCBI Journal Title Abbreviations
 
-- [National Center for Biotechnology Information][ncbi]
-- [National Library of Medicine][nlm]
-- [journal catalogue](https://www.ncbi.nlm.nih.gov/nlmcatalog/journals)
+Abbreviations of over 38000 journal titles _referenced_ in
+the [catalogue](https://www.ncbi.nlm.nih.gov/nlmcatalog/journals) of
+the [National Center for Biotechnology Information][ncbi],
+part of the US [National Library of Medicine][nlm],
+are provided in [JSON][json] format.
+
+This allows [Pandoc][pandoc] and other programs to produce references
+with correctly abbreviated journal titles in accordance with
+the [American Medical Association][ama] [_Manual of Style_][style].
+
+Topics not only cover the entire spectrum of biomedical and life sciences,
+but also include many related fields.
 
 
 ## Usage
@@ -90,6 +99,8 @@ are to be found in the subdirectory [`json/`](../../../blob/master/ncbi/json/):
   always freely available through [PubMed Central][pmc].
   PMC is not a subset of MEDLINE, but there is some overlap.
 
+The data contained in above mentioned JSON files belongs to the public domain.
+
 
 ## Privacy
 
@@ -134,11 +145,15 @@ $ echo c2VyZ2VAc3Ryb29iYW5kdC5jb20K |base64 -d
 [medline]: https://en.wikipedia.org/wiki/MEDLINE
 [pmc]:     https://en.wikipedia.org/wiki/PubMed_Central
 
-[pandoc]:   https://pandoc.org/MANUAL.html#specifying-a-citation-style
+[ama]:   https://www.amamanualofstyle.com
+[style]: https://guides.lib.uw.edu/hsl/ama/tips
+
 [xml]:      https://en.wikipedia.org/wiki/XML
 [xslt]:     https://en.wikipedia.org/wiki/XSLT
 [xsltproc]: https://en.wikipedia.org/wiki/Libxslt
 [ncbi.xsl]: ../../../blob/master/ncbi/xsl/ncbi-abbreviations.xsl
+
+[pandoc]: https://pandoc.org/MANUAL.html#specifying-a-citation-style
 
 [json]:         https://en.wikipedia.org/wiki/JSON
 [ncbi.json]:    ../../../blob/master/ncbi/json/ncbi-abbreviations.json
