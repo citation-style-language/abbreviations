@@ -152,7 +152,7 @@ $ echo c2VyZ2VAc3Ryb29iYW5kdC5jb20K |base64 -d
 [xsltproc]: https://en.wikipedia.org/wiki/Libxslt
 [ncbi.xsl]: ../../../blob/master/ncbi/xsl/ncbi-abbreviations.xsl
 
-[pandoc]: https://pandoc.org
+[pandoc]: https://pandoc.org/MANUAL.html
 [option]: https://pandoc.org/MANUAL.html#specifying-a-citation-style
 
 [json]:         https://en.wikipedia.org/wiki/JSON
