@@ -41,17 +41,31 @@ tens to several hundreds megabyte!
 
 Most of the heavy lifting in extracting the relevant [XML][xml] data to build
 the [JSON][json] journal abbreviation lists is done by
-the [XSLT][xslt] processor `xsltproc` on the basis of
+the [XSLT][xslt] processor [`xsltproc`][xsltproc] on the basis of
 the [`ncbi-abbeviations.xls`][ncbi.xsl] style sheet.
+
+Use the package manager of your operating system to install `xsltproc`.
+`brew` and `choco` are recommended package managers for
+respectively macOS and Windows. See also: <http://xmlsoft.org/downloads.html>
+
+```bash
+$ sudo apt install xsltproc
+$ sudo dnf install xsltproc
+$ sudo yum install xsltproc
+$ brew install xsltproc
+> choco install xsltproc
+```
 
 
 ## Build
 
+The [`makefile`](../../../blob/master/ncbi/makefile) contains the entire recipe
+to build the desired JSON journal abbreviation lists from the XML input files.
+The journal abbreviation lists are made by evoking the following shell command:
+
 ```bash
 $ make -B
 ```
-
-[`makefile`](../../../blob/master/ncbi/makefile)
 
 
 ## JSON Output
@@ -107,10 +121,11 @@ $ echo c2VyZ2VAc3Ryb29iYW5kdC5jb20K |base64 -d
 [nlm]:  https://en.wikipedia.org/wiki/United_States_National_Library_of_Medicine
 [ncbi]: https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information
 
-[pandoc]: https://pandoc.org/MANUAL.html#specifying-a-citation-style
-[xml]:    https://en.wikipedia.org/wiki/XML
-[xslt]:   https://en.wikipedia.org/wiki/XSLT
-[json]:   https://en.wikipedia.org/wiki/JSON
+[pandoc]:   https://pandoc.org/MANUAL.html#specifying-a-citation-style
+[xml]:      https://en.wikipedia.org/wiki/XML
+[xslt]:     https://en.wikipedia.org/wiki/XSLT
+[xsltproc]: https://en.wikipedia.org/wiki/Libxslt
+[json]:     https://en.wikipedia.org/wiki/JSON
 
 [ncbi.xsl]:     ../../../blob/master/ncbi/xsl/ncbi-abbreviations.xsl
 
