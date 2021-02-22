@@ -6,7 +6,7 @@
 
 # Input Files
 Three [XML](https://en.wikipedia.org/wiki/XML) files need to be downloaded and 
-stored in the subdirectory `input/`:
+stored in the subdirectory `input/` prior to building:
 
 - [`ncbi.xml`](https://www.ncbi.nlm.nih.gov/nlmcatalog/?term=ncbijournals)
 - [`medline.xml`](https://www.ncbi.nlm.nih.gov/nlmcatalog?term=currentlyindexed)
