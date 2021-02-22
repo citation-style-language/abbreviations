@@ -7,6 +7,14 @@
 
 ## Usage
 
+Most users will mainly be interested in the journal title abbreviation lists
+[`ncbi-abbreviation.json`][ncbi.json] and  [`nml-abbreviation.json`][nml.json]
+for use with `--citation-abbreviations=`_**FILE**_ in [Pandoc][pandoc].
+These users may well disregard below build instructions.
+
+The scope of each and every NCBI journal title abbreviation file is
+[described in this section](#json-output).
+
 
 ## Input Files
 
@@ -34,9 +42,8 @@ to save the entire catalogue as an XML file:
 
 ## JSON Output
 
-The [JSON](https://en.wikipedia.org/wiki/JSON) output files are
-for use with `--citation-abbreviations=`_**FILE**_
-in [Pandoc](https://pandoc.org/MANUAL.html#specifying-a-citation-style) and
+The [JSON][json] output files are
+for use with `--citation-abbreviations=`_**FILE**_ in [Pandoc][pandoc] and
 are to be found in the subdirectory [`json/`](../../../blob/master/ncbi/json/):
 
 - [`ncbi-abbreviation.json`][ncbi.json] are the abbreviations of over 38000 journals _referenced_ in the databases of the [National Center for Biotechnology Information][ncbi].
@@ -86,6 +93,8 @@ $ echo c2VyZ2VAc3Ryb29iYW5kdC5jb20K |base64 -d
 [nlm]: https://en.wikipedia.org/wiki/United_States_National_Library_of_Medicine
 [ncbi]: https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information
 
+[pandoc]: https://pandoc.org/MANUAL.html#specifying-a-citation-style
+[json]: https://en.wikipedia.org/wiki/JSON
 [ncbi.json]: ../../../blob/master/ncbi/json/ncbi-abbreviations.json
 [medline.json]: ../../../blob/master/ncbi/json/medline-abbreviations.json
 [pmc.json]: ../../../blob/master/ncbi/json/pmc-abbreviations.json
