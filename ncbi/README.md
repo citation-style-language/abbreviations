@@ -1,6 +1,6 @@
 # NCBI Journal Title Abbreviations
 
-The abbreviations of over 38000 journal titles _referenced_ in
+The abbreviations of over 38000 journal titles referenced in
 the [catalogue](https://www.ncbi.nlm.nih.gov/nlmcatalog/journals) of
 the [National Center for Biotechnology Information][ncbi],
 part of the US [National Library of Medicine][nlm],
