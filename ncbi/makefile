@@ -74,9 +74,10 @@ json/pmc-abbreviations.json: input/pmc.xml
 
 
 json/nlm-abbreviations.json: json/medline-abbreviations.json json/pmc-abbreviations.json
-	{ 	sed '1,2d; $$ s/$$/,/' <(head -n -3 json/medline-abbreviations.json) ;   \
-		sed '1,2d; $$ s/$$/,/' <(head -n -3 json/pmc-abbreviations.json)     ; } \
+	{ 	sed '1,7d; $$ s/$$/,/' <(head -n -3 json/medline-abbreviations.json) ;   \
+		sed '1,7d; $$ s/$$/,/' <(head -n -3 json/pmc-abbreviations.json)     ; } \
 	|sort -u \
-	|sed '1i { "default": {\n    "container-title": {' \
-	|sed '$$ s/,$$/\n    }\n  }\n}/' \
+	|sed '1 e cat json/header.json' \
+	|sed '$$ s/,$$//' \
+	|cat - json/footer.json \
 	> $@

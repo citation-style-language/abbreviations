@@ -3,13 +3,18 @@
 
     <xsl:output  method="text" indent="yes" media-type="text/json" omit-xml-declaration="yes"/>
 
-    <xsl:template match="/">{ "default": {
-    "container-title": {
-        <xsl:for-each select="NLMCatalogRecordSet/NCBICatalogRecord/JrXml">"<xsl:value-of select="Serial/Title"/>": "<xsl:value-of select="Serial/MedlineTA"/>"<xsl:if test="not(position() = last())">,
-        </xsl:if>
-        </xsl:for-each>
-    }
-  }
+    <xsl:template match="/">{
+	"info": {
+		"URI":  "https://github.com/stroobandt/abbreviations/tree/master/ncbi/json",
+		"name": "NCBI Journal Title Abbreviations"
+	},
+	"default": {
+		"container-title": {
+			<xsl:for-each select="NLMCatalogRecordSet/NCBICatalogRecord/JrXml">"<xsl:value-of select="Serial/Title"/>": "<xsl:value-of select="Serial/MedlineTA"/>"<xsl:if test="not(position() = last())">,
+			</xsl:if>
+			</xsl:for-each>
+		}
+	}
 }</xsl:template>
 
 </xsl:stylesheet>
