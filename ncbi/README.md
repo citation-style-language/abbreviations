@@ -8,9 +8,11 @@ In `input/`:
 
 ![Use the `Send to` dialog at the bottom of the web page to save the entire catalog as an XML file.](screenshot/send_to.png)
 
+[`makefile`]()
+
 In `json/`:
 
-- [`ncbi-abbreviation.json`](): The abbreviations of over 38000 journals _referenced_ in all databases of the [National Center for Biotechnology Information](https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information).
+- [`ncbi-abbreviation.json`](../../../blob/master/ncbi/json/ncbi-abbreviations.json): The abbreviations of over 38000 journals _referenced_ in the databases of the [National Center for Biotechnology Information](https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information).
 - [`medline-abbreviation.json`]():
 - [`pmc-abbreviation.json`]():
 - [`nml-abbreviation.json`]():
