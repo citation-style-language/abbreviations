@@ -10,6 +10,7 @@
 Most users will mainly be interested in the journal title abbreviation lists
 [`ncbi-abbreviation.json`][ncbi.json] and  [`nml-abbreviation.json`][nml.json]
 for use with `--citation-abbreviations=`_**FILE**_ in [Pandoc][pandoc].
+
 These users may well disregard below build instructions.
 
 The scope of each and every NCBI journal title abbreviation file is
