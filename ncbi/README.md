@@ -33,7 +33,7 @@ to save the entire catalogue as an XML file:
 
 ![](screenshot/send_to.png)
 
-BEWARE: The journal catalogues in XML format are huge files of
+**BEWARE:** The journal catalogues in XML format are huge files of
 tens to several hundreds megabyte!
 
 
