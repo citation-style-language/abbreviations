@@ -19,24 +19,37 @@ The scope of each and every NCBI journal title abbreviation file is
 
 ## Input Files
 
-Three [XML](https://en.wikipedia.org/wiki/XML) files need to be downloaded and
+Three [XML][xml] files need to be downloaded and
 stored in the subdirectory `input/` prior to building:
 
 - [`ncbi.xml`](https://www.ncbi.nlm.nih.gov/nlmcatalog/?term=ncbijournals)
 - [`medline.xml`](https://www.ncbi.nlm.nih.gov/nlmcatalog?term=currentlyindexed)
 - [`pmc.xml`](https://www.ncbi.nlm.nih.gov/nlmcatalog?term=journalspmc)
 
+Click on the above web links to open the respective journal catalogues.
 
 Use the `Send to` dialogue at the bottom of the web page
 to save the entire catalogue as an XML file:
 
 ![](screenshot/send_to.png)
 
+BEWARE: The journal catalogues in XML format are huge files of
+tens to several hundreds megabyte!
+
 
 ## Other Requirements
 
+Most of the heavy lifting in extracting the relevant [XML][xml] data to build
+the [JSON][json] journal abbreviation lists is done by
+the [XSLT][xslt] processor `xsltproc` on the basis of
+the [`ncbi-abbeviations.xls`][ncbi.xsl] style sheet.
+
 
 ## Build
+
+```bash
+$ make -B
+```
 
 [`makefile`](../../../blob/master/ncbi/makefile)
 
@@ -91,12 +104,17 @@ $ echo c2VyZ2VAc3Ryb29iYW5kdC5jb20K |base64 -d
 ```
 
 
-[nlm]: https://en.wikipedia.org/wiki/United_States_National_Library_of_Medicine
+[nlm]:  https://en.wikipedia.org/wiki/United_States_National_Library_of_Medicine
 [ncbi]: https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information
 
 [pandoc]: https://pandoc.org/MANUAL.html#specifying-a-citation-style
-[json]: https://en.wikipedia.org/wiki/JSON
-[ncbi.json]: ../../../blob/master/ncbi/json/ncbi-abbreviations.json
+[xml]:    https://en.wikipedia.org/wiki/XML
+[xslt]:   https://en.wikipedia.org/wiki/XSLT
+[json]:   https://en.wikipedia.org/wiki/JSON
+
+[ncbi.xsl]:     ../../../blob/master/ncbi/xsl/ncbi-abbreviations.xsl
+
+[ncbi.json]:    ../../../blob/master/ncbi/json/ncbi-abbreviations.json
 [medline.json]: ../../../blob/master/ncbi/json/medline-abbreviations.json
-[pmc.json]: ../../../blob/master/ncbi/json/pmc-abbreviations.json
-[nml.json]: ../../../blob/master/ncbi/json/nml-abbreviations.json
+[pmc.json]:     ../../../blob/master/ncbi/json/pmc-abbreviations.json
+[nml.json]:     ../../../blob/master/ncbi/json/nml-abbreviations.json
