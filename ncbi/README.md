@@ -74,10 +74,10 @@ The [JSON][json] output files are
 for use with `--citation-abbreviations=`_**FILE**_ in [Pandoc][pandoc] and
 are to be found in the subdirectory [`json/`](../../../blob/master/ncbi/json/):
 
-- [`ncbi-abbreviations.json`][ncbi.json] are the abbreviations of over 38000 journals _referenced_ in the databases of the [National Center for Biotechnology Information][ncbi].
-- [`nml-abbreviations.json`][nml.json]
-- [`medline-abbreviations.json`][medline.json]
-- [`pmc-abbreviations.json`][pmc.json]
+- [`ncbi-abbreviations.json`][ncbi.json] are the abbreviations of over 38000 journal titles _referenced_ in the databases of the [National Center for Biotechnology Information][ncbi].
+- [`nml-abbreviations.json`][nml.json] are the abbreviations of over 7400 biomedical and life sciences journal titles; obtained by combining below two files.
+- [`medline-abbreviations.json`][medline.json] are the abbreviations of over 5200 academic journal titles _indexed_ in the [MEDLINE][medline] database. Topics cover medicine, nursing, pharmacy, dentistry, veterinary medicine, health care, biology, biochemistry and molecular evolution.
+- [`pmc-abbreviations.json`][pmc.json] are the abbreviations of nearly 3000 biomedical and life sciences journal titles which full text is freely available through [PubMed Central][pmc].
 
 
 ## Privacy
@@ -118,17 +118,18 @@ $ echo c2VyZ2VAc3Ryb29iYW5kdC5jb20K |base64 -d
 ```
 
 
-[nlm]:  https://en.wikipedia.org/wiki/United_States_National_Library_of_Medicine
-[ncbi]: https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information
+[nlm]:     https://en.wikipedia.org/wiki/United_States_National_Library_of_Medicine
+[ncbi]:    https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information
+[medline]: https://en.wikipedia.org/wiki/MEDLINE
+[pmc]:     https://en.wikipedia.org/wiki/PubMed_Central
 
 [pandoc]:   https://pandoc.org/MANUAL.html#specifying-a-citation-style
 [xml]:      https://en.wikipedia.org/wiki/XML
 [xslt]:     https://en.wikipedia.org/wiki/XSLT
 [xsltproc]: https://en.wikipedia.org/wiki/Libxslt
-[json]:     https://en.wikipedia.org/wiki/JSON
+[ncbi.xsl]: ../../../blob/master/ncbi/xsl/ncbi-abbreviations.xsl
 
-[ncbi.xsl]:     ../../../blob/master/ncbi/xsl/ncbi-abbreviations.xsl
-
+[json]:         https://en.wikipedia.org/wiki/JSON
 [ncbi.json]:    ../../../blob/master/ncbi/json/ncbi-abbreviations.json
 [medline.json]: ../../../blob/master/ncbi/json/medline-abbreviations.json
 [pmc.json]:     ../../../blob/master/ncbi/json/pmc-abbreviations.json
