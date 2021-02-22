@@ -4,7 +4,7 @@ The abbreviations of over 38000 journal titles referenced in
 the [catalogue](https://www.ncbi.nlm.nih.gov/nlmcatalog/journals) of
 the [National Center for Biotechnology Information][ncbi],
 part of the US [National Library of Medicine][nlm],
-are provided in [JSON][json] format.
+are [provided in JSON format](#json-output).
 This allows [Pandoc][pandoc] and other programs to produce references
 with correctly abbreviated journal titles in accordance with
 the [American Medical Association][ama] [_Manual of Style_][style].
@@ -17,7 +17,7 @@ but also include many related fields.
 
 Most users will be mainly interested in the journal title abbreviation lists
 [`ncbi-abbreviations.json`][ncbi.json] and  [`nml-abbreviations.json`][nml.json]
-for use with `--citation-abbreviations=`_FILE_ in [Pandoc][pandoc].
+for use with the `--citation-abbreviations=`_FILE_ [option in Pandoc][option].
 
 These users may well disregard below build instructions.
 
@@ -78,8 +78,8 @@ $ make -B
 
 ## JSON Output
 
-The [JSON][json] output files are
-for use with `--citation-abbreviations=`_FILE_ in [Pandoc][pandoc] and
+The [JSON][json] output files are for use with
+the `--citation-abbreviations=`_FILE_ [option in Pandoc][option] and
 are to be found in the subdirectory [`json/`](../../../blob/master/ncbi/json/):
 
 - [`ncbi-abbreviations.json`][ncbi.json] are the abbreviations of over 38000
@@ -152,7 +152,8 @@ $ echo c2VyZ2VAc3Ryb29iYW5kdC5jb20K |base64 -d
 [xsltproc]: https://en.wikipedia.org/wiki/Libxslt
 [ncbi.xsl]: ../../../blob/master/ncbi/xsl/ncbi-abbreviations.xsl
 
-[pandoc]: https://pandoc.org/MANUAL.html#specifying-a-citation-style
+[pandoc]: https://pandoc.org
+[option]: https://pandoc.org/MANUAL.html#specifying-a-citation-style
 
 [json]:         https://en.wikipedia.org/wiki/JSON
 [ncbi.json]:    ../../../blob/master/ncbi/json/ncbi-abbreviations.json
