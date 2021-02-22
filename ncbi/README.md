@@ -9,7 +9,7 @@
 
 Most users will mainly be interested in the journal title abbreviation lists
 [`ncbi-abbreviations.json`][ncbi.json] and  [`nml-abbreviations.json`][nml.json]
-for use with `--citation-abbreviations=`_**FILE**_ in [Pandoc][pandoc].
+for use with `--citation-abbreviations=`_FILE_ in [Pandoc][pandoc].
 
 These users may well disregard below build instructions.
 
@@ -71,7 +71,7 @@ $ make -B
 ## JSON Output
 
 The [JSON][json] output files are
-for use with `--citation-abbreviations=`_**FILE**_ in [Pandoc][pandoc] and
+for use with `--citation-abbreviations=`_FILE_ in [Pandoc][pandoc] and
 are to be found in the subdirectory [`json/`](../../../blob/master/ncbi/json/):
 
 - [`ncbi-abbreviations.json`][ncbi.json] are the abbreviations of over 38000 journal titles _referenced_ in the databases of the [National Center for Biotechnology Information][ncbi].
