@@ -77,7 +77,7 @@ are to be found in the subdirectory [`json/`](../../../blob/master/ncbi/json/):
 - [`ncbi-abbreviations.json`][ncbi.json] are the abbreviations of over 38000 journal titles _referenced_ in the databases of the [National Center for Biotechnology Information][ncbi].
 - [`nml-abbreviations.json`][nml.json] are the abbreviations of over 7400 biomedical and life sciences journal titles; obtained by combining below two JSON files.
 - [`medline-abbreviations.json`][medline.json] are the abbreviations of over 5200 academic journal titles _indexed_ in the [MEDLINE][medline] database. Topics cover medicine, nursing, pharmacy, dentistry, veterinary medicine, health care, biology, biochemistry and molecular evolution.
-- [`pmc-abbreviations.json`][pmc.json] are the abbreviations of nearly 3000 biomedical and life sciences journal titles which full text is freely available through [PubMed Central][pmc]. PMC is not a subset of MEDLINE, but there is some overlap.
+- [`pmc-abbreviations.json`][pmc.json] are the abbreviations of nearly 3000 biomedical and life sciences journal titles of which the full text remains always freely available through [PubMed Central][pmc]. PMC is not a subset of MEDLINE, but there is some overlap.
 
 
 ## Privacy
