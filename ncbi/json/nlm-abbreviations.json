@@ -1,18 +1,6 @@
 {
-	"info": {
-		"URI":  "https://github.com/stroobandt/abbreviations/tree/master/ncbi/json",
-		"name": "NCBI Journal Title Abbreviations"
-	},
 	"default": {
 		"container-title": {
-			"20 century British history": "20 Century Br Hist",
-			"3 Biotech": "3 Biotech",
-			"3D printing in medicine": "3D Print Med",
-			"AACE clinical case reports": "AACE Clin Case Rep",
-			"AACN advanced critical care": "AACN Adv Crit Care",
-			"AANA journal": "AANA J",
-			"A&A practice": "A A Pract",
-			"AAPS pharmSci": "AAPS PharmSci",
 			"AAPS PharmSciTech": "AAPS PharmSciTech",
 			"AAS open research": "AAS Open Res",
 			"Abdominal radiology (New York)": "Abdom Radiol (NY)",

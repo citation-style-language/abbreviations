@@ -1,7 +1,3 @@
 {
-	"info": {
-		"URI":  "https://github.com/stroobandt/abbreviations/tree/master/ncbi/json",
-		"name": "NCBI Journal Title Abbreviations"
-	},
 	"default": {
 		"container-title": {

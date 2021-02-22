@@ -1,8 +1,4 @@
 {
-	"info": {
-		"URI":  "https://github.com/stroobandt/abbreviations/tree/master/ncbi/json",
-		"name": "NCBI Journal Title Abbreviations"
-	},
 	"default": {
 		"container-title": {
 			"10th IEEE International Conference on Big Knowledge : proceedings : 10-11 November 2019, Beijing, China. IEEE International Conference on Big Knowledge (10th : 2019 : Beijing, China)": "10th IEEE Int Conf Big Knowl (2019)",
