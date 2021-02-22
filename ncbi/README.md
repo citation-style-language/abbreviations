@@ -28,7 +28,7 @@ to save the entire catalogue as an XML file:
 
 # JSON Output
 The output [JSON](https://en.wikipedia.org/wiki/JSON) files
-for use with `--citation-abbreviations=`
+for use with `--citation-abbreviations=`_**FILE**_
 in [Pandoc](https://pandoc.org/MANUAL.html#specifying-a-citation-style)
 are found in the subdirectory [`json/`](../../../blob/master/ncbi/json/):
 
