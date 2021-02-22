@@ -77,6 +77,7 @@ are to be found in the subdirectory [`json/`](../../../blob/master/ncbi/json/):
 - [`ncbi-abbreviations.json`][ncbi.json] are the abbreviations of over 38000
   journal titles _referenced_ in the databases of
   the [National Center for Biotechnology Information][ncbi].
+  Topics cover, _but are not limited to,_ biomedical and life sciences.
 - [`nml-abbreviations.json`][nml.json] are the abbreviations of over 7400
   biomedical and life sciences journal titles;
   obtained by combining below two JSON files.
