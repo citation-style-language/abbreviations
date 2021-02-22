@@ -39,9 +39,11 @@ are found in the subdirectory [`json/`](../../../blob/master/ncbi/json/):
 
 
 # Privacy
+No Internet connection is established when building the JSON files
+of this repository using the `make -B` shell command.
 
 
-# Copyright
+# License
 
 [ncbi.json]: ../../../blob/master/ncbi/json/ncbi-abbreviations.json
 [medline.json]: ../../../blob/master/ncbi/json/medline-abbreviations.json
