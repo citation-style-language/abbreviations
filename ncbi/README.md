@@ -13,7 +13,7 @@ for use with `--citation-abbreviations=`_FILE_ in [Pandoc][pandoc].
 
 These users may well disregard below build instructions.
 
-The scope of each and every NCBI journal title abbreviation file is
+The scope of each NCBI journal title abbreviation file is
 [described in this section](#json-output).
 
 
