@@ -28,7 +28,7 @@ stored in the subdirectory `input/` prior to building:
 
 Click on the above web links to open the respective journal catalogues.
 
-Use the `Send to` dialogue at the bottom of the web page
+Use the `Send to` dialogue at the bottom of each web page
 to save the entire catalogue as an XML file:
 
 ![](screenshot/send_to.png)
