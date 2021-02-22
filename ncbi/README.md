@@ -160,3 +160,4 @@ $ echo c2VyZ2VAc3Ryb29iYW5kdC5jb20K |base64 -d
 [medline.json]: ../../../blob/master/ncbi/json/medline-abbreviations.json
 [pmc.json]:     ../../../blob/master/ncbi/json/pmc-abbreviations.json
 [nml.json]:     ../../../blob/master/ncbi/json/nml-abbreviations.json
+[zotero.json]:  https://github.com/zotero/zotero/blob/master/resource/schema/abbreviations.json
