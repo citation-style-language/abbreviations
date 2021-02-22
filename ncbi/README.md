@@ -8,7 +8,7 @@
 ## Usage
 
 Most users will mainly be interested in the journal title abbreviation lists
-[`ncbi-abbreviation.json`][ncbi.json] and  [`nml-abbreviation.json`][nml.json]
+[`ncbi-abbreviations.json`][ncbi.json] and  [`nml-abbreviations.json`][nml.json]
 for use with `--citation-abbreviations=`_**FILE**_ in [Pandoc][pandoc].
 
 These users may well disregard below build instructions.
@@ -60,10 +60,10 @@ The [JSON][json] output files are
 for use with `--citation-abbreviations=`_**FILE**_ in [Pandoc][pandoc] and
 are to be found in the subdirectory [`json/`](../../../blob/master/ncbi/json/):
 
-- [`ncbi-abbreviation.json`][ncbi.json] are the abbreviations of over 38000 journals _referenced_ in the databases of the [National Center for Biotechnology Information][ncbi].
-- [`nml-abbreviation.json`][nml.json]
-- [`medline-abbreviation.json`][medline.json]
-- [`pmc-abbreviation.json`][pmc.json]
+- [`ncbi-abbreviations.json`][ncbi.json] are the abbreviations of over 38000 journals _referenced_ in the databases of the [National Center for Biotechnology Information][ncbi].
+- [`nml-abbreviations.json`][nml.json]
+- [`medline-abbreviations.json`][medline.json]
+- [`pmc-abbreviations.json`][pmc.json]
 
 
 ## Privacy
