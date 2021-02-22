@@ -1,5 +1,6 @@
-# NCBI
+# NCBI Journal Title Abbreviations
 
+[National Center for Biotechnology Information][ncbi]
 [NCBI NLM catalog](https://www.ncbi.nlm.nih.gov/nlmcatalog/journals)
 
 
