@@ -38,10 +38,10 @@ for use with `--citation-abbreviations=`_**FILE**_
 in [Pandoc](https://pandoc.org/MANUAL.html#specifying-a-citation-style)
 are found in the subdirectory [`json/`](../../../blob/master/ncbi/json/):
 
-- [`ncbi-abbreviation.json`][ncbi.json]: The abbreviations of over 38000 journals _referenced_ in the databases of the [National Center for Biotechnology Information][ncbi].
-- [`medline-abbreviation.json`][medline.json]:
-- [`pmc-abbreviation.json`][pmc.json]:
-- [`nml-abbreviation.json`][nml.json]:
+- [`ncbi-abbreviation.json`][ncbi.json] are the abbreviations of over 38000 journals _referenced_ in the databases of the [National Center for Biotechnology Information][ncbi].
+- [`medline-abbreviation.json`][medline.json]
+- [`pmc-abbreviation.json`][pmc.json]
+- [`nml-abbreviation.json`][nml.json]
 
 
 ## Privacy
