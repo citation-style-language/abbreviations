@@ -7,7 +7,7 @@
 
 ## Usage
 
-Most users will mainly be interested in the journal title abbreviation lists
+Most users will be mainly interested in the journal title abbreviation lists
 [`ncbi-abbreviations.json`][ncbi.json] and  [`nml-abbreviations.json`][nml.json]
 for use with `--citation-abbreviations=`_FILE_ in [Pandoc][pandoc].
 
